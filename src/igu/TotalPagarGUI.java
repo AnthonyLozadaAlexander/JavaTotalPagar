@@ -192,14 +192,15 @@ public class TotalPagarGUI extends javax.swing.JFrame {
 
   private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
    try{
-    String descripcion = txtDescripcion.getText();
+   // declaracion de variables y conversiones de los txt  
+   String descripcion = txtDescripcion.getText();
    float cantidad = Float.parseFloat(txtCantidad.getText());
    float precio = Float.parseFloat(txtPrecio.getText());
    float total = (cantidad * precio);
    
    txtTotalPagar.setText(""+total);
    }catch (Exception error){
-     JOptionPane.showMessageDialog(null, error);
+     JOptionPane.showMessageDialog(null, error); // captura un error dentro del programa
      
    }
   }//GEN-LAST:event_btnCalcularActionPerformed
