@@ -200,6 +200,7 @@ public class TotalPagarGUI extends javax.swing.JFrame {
    txtTotalPagar.setText(""+total);
    }catch (Exception error){
      JOptionPane.showMessageDialog(null, error);
+     
    }
   }//GEN-LAST:event_btnCalcularActionPerformed
 
